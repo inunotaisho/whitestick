@@ -1,8 +1,9 @@
 let puller = require('website-scraper');
+let rimraf = require('rimraf');
 
 var options = {
   urls: ['http://twitter.com/*'],
-  directory: '/path/to/save/',
+  directory: '../../textholder/mypage',
 };
  
 // with promise 
