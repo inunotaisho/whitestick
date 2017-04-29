@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/inunotaisho26/whitestick/issues"
   },
-  "homepage": "https://github.com/inunotaisho26/whitestick#readme"
+  "homepage": "https://github.com/inunotaisho26/whitestick#readme",
+  "dependencies": {
+    "browserify": "^14.3.0",
+    "python-bridge": "^0.1.5"
+  }
 }
