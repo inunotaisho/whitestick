@@ -1,8 +1,13 @@
 
 let puller = require('website-scraper');
 let options = {
-urls: ['https://en.wikipedia.org/wiki/Baltimore/'],
+urls: ['http://www.borderlandoftherockies.com/'],
 directory: './textholder/mypage',
+sources: [
+	    {selector: 'img', attr: 'src'},
+        {selector: 'link[rel="stylesheet"]', attr: 'href'},
+        {selector: 'script', attr: 'src'}
+ 	  ]
 };
 
 // with promise 
