@@ -1,16 +1,15 @@
-let puller = require('website-scraper');
-let rimraf = require('rimraf');
 
-var options = {
-  urls: ['http://twitter.com/*'],
-  directory: '../../textholder/mypage',
+let puller = require('website-scraper');
+let options = {
+urls: ['https://en.wikipedia.org/wiki/Baltimore/'],
+directory: './textholder/mypage',
 };
- 
+
 // with promise 
-var promise = puller(options);
+let promise = puller(options);
 
 promise.then(function(result){
-	console.log(result);
+    console.log(result);
 });
 
 // promise.then((result) => {
@@ -34,3 +33,5 @@ promise.then(function(result){
 puller(options, (error, result) => {
     /*some code here */
 });
+
+module.exports = puller;
